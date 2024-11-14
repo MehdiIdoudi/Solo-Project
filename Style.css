@@ -1,7 +1,178 @@
+
 #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
+  }
+
+
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:6px;
+    border-color: gray;
+    border-radius: 20px;
+    border-style: double;
+    padding: 20px;
+     z-index: 2;
+     position: relative;
+    width: 650px;
+    height: 35px;
+    left: 400px;
+    top: 0px;
+    background: linear-gradient(#ab4bc9, #b0333d);
+    gap: 100px;
+  }
+
+
+#The-game{
+    border:6px;
+    border-color: gray;
+    border-radius: 20px;
+    border-style: double;
+    padding: 20px;
+     z-index: 1;
+     position: relative;
+    width: 650px;
+    height: 500px;
+    left: 400px;
+    top: 20px;
+    background-color: gray; 
+
+
+}
+#win{
+    position: absolute;
+    width: 380px;
+    height: 290px;
+    background-color: #00DDEB;
+    z-index: 3;
+    left: 580px;
+    top: 200px;
+}
+
+
+table{
+    top: -5px;
+    position: absolute;
+    left: 40px;
+    border-spacing: 35px;
+}
+th {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+img{
+    height: 200px;
+    width: 140px;
+}
+
+h1,span{
+    color: white;
+    font-size: small;
+}
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////        not my code but i copy it from outside websites for button and 1 for card      */
+
+/* From Uiverse.io by KSAplay */ 
+.btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1em 2em;
+    font-size: 15px;
+    font-weight: bold;
+    border-width: 0;
+    border-radius: 1.5em;
+    text-transform: uppercase;
+    transition: .2s ease;
+  }
+  
+  .text {
+    font-size: 1.2em;
+    color: white;
+    z-index: 1;
+  }
+  
+  .btn::before {
+    position: absolute;
+    content: '';
+    width: 120%;
+    height: 260%;
+    background-image: linear-gradient(135deg, rgba(0,5,255,1) 0%, rgba(255,0,159,1) 100%);
+  }
+  
+  .btn::after {
+    position: absolute;
+    content: '';
+    width: 88%;
+    height: 80%;
+    border-width: 0;
+    border-radius: 1.2em;
+    background-color: black;
+    opacity: .7;
+    transition: 100ms ease;
+  }
+  
+  .btn:hover.btn {
+    transform: scale(1.1);
+  }
+  
+  .btn:hover.btn::after {
+    opacity: .5;
+  }
+  
+  .btn:hover.btn::before {
+    animation: turn_4810 .4s infinite linear;
+  }
+  
+  .btn:active.btn {
+    transform: scale(1.05);
+  }
+  
+  .btn:active.btn::before {
+    transform: scale(1.05);
+    animation: turn_4810 .2s infinite linear;
+  }
+  
+  @keyframes turn_4810 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 130%;
+    height: 100%;
+    transform-origin: top;
   }
